@@ -1,0 +1,23 @@
+{
+  "id": "original-placeholder",
+  "title": "Untitled (Original Placeholder)",
+  "artist": "Franklin Udensi (placeholder)",
+  "rightsNote": "Original placeholder lines written for development testing only — replace with a real original or licensed song.",
+  "durationSeconds": 16.0,
+  "difficulty": 1,
+  "audioFile": "",
+  "lines": [
+    {
+      "start": 0,
+      "end": 8,
+      "text": "Sing the song that's in your heart",
+      "syllables": []
+    },
+    {
+      "start": 8,
+      "end": 16,
+      "text": "Every ending is a start",
+      "syllables": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Headless mirror of the Unity EditMode tests: compiles the SAME core and
+       test sources with the plain .NET SDK so the deterministic logic is
+       verified outside Unity. The Unity Test Framework runs the identical
+       files in-editor. See STATUS.md for which results came from where. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SyReality.Tests</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Assets\SyReality\Core\*.cs" Link="Core\%(Filename)%(Extension)" />
+    <Compile Include="..\..\Assets\SyReality\Tests\EditMode\*.cs" Link="Tests\%(Filename)%(Extension)" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.14.0" />
+    <PackageReference Include="NUnitLite" Version="3.14.0" />
+  </ItemGroup>
+</Project>

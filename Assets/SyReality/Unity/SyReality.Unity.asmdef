@@ -1,0 +1,13 @@
+{
+    "name": "SyReality.Unity",
+    "rootNamespace": "SyReality.Unity",
+    "references": ["SyReality.Core"],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": []
+}

@@ -1,0 +1,33 @@
+# Unity standard gitignore
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+sysinfo.txt
+crashlytics-build.properties
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+# Local headless test tooling output
+/tools/CoreTests/bin/
+/tools/CoreTests/obj/
+# ...but the hand-written headless test project IS source — keep it.
+!/tools/CoreTests/CoreTests.csproj
+!/tools/CoreTests/Program.cs
+/tools/CoreTests/TestResult.xml
