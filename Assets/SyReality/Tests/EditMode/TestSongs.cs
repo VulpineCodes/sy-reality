@@ -5,7 +5,7 @@ namespace SyReality.Tests
 {
     /// <summary>Shared fixtures: a small deterministic song with known timings.
     /// Lines: [0,4) "Alpha line", [4,8) "Bravo line" (syllable cues), [10,14) "Charlie"
-    /// — note the 8–10s instrumental gap.</summary>
+    /// Note the 8 to 10s instrumental gap.</summary>
     public static class TestSongs
     {
         public static SongDefinition ThreeLineSong()

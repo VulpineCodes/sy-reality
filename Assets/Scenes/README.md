@@ -1,6 +1,6 @@
 # MainStage scene
 
-The scene is **generated from code** — do not hand-edit binary scene YAML.
+The scene is **generated from code**. Do not hand-edit binary scene YAML.
 To (re)build it: Unity menu **SyReality → Build MainStage Scene**
 (`Assets/SyReality/Editor/SceneBuilder.cs`). It creates
 `Assets/Scenes/MainStage.unity`, the song-button prefab, and the three
@@ -12,7 +12,7 @@ environment profile assets under `Assets/SyReality/Data/`.
 | --- | --- | --- |
 | `Key Light` | Directional Light | Retuned per environment profile by EnvironmentDirector |
 | `XR Rig (Placeholder)` | `Camera Offset` → `Main Camera` (tagged MainCamera, AudioListener), `Left/Right Controller` cubes | Stand-in rig. Replace with XRI's **XR Origin (XR Rig)** prefab for device work; everything else is rig-agnostic |
-| `Stages` | `Stage_NeonClub`, `Stage_SunsetRooftop`, `Stage_CosmicStage` — each with `Stage Floor`, `Backdrop`, `Particles_<preset>` | One root per environment; EnvironmentDirector activates exactly one |
+| `Stages` | `Stage_NeonClub`, `Stage_SunsetRooftop`, `Stage_CosmicStage`, each with `Stage Floor`, `Backdrop`, `Particles_<preset>` | One root per environment; EnvironmentDirector activates exactly one |
 | `Managers` | PerformanceManager; child `AudioEngine` (+AudioSource); child `EnvironmentDirector` | Session flow, drift-corrected clock, audio, environments |
 | `Lyric Canvas` | World-space Canvas (900×420 at z≈3.2) with LyricDisplay, `Previous/Current/Next Line` TMP texts, Progress Bar (Filled Image), child `Song Library Panel` → `Song List` (VerticalLayoutGroup) + SongLibraryUI | Karaoke readout; readability-sized type (current line 64pt in canvas units) |
 

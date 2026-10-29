@@ -27,7 +27,7 @@ crashlytics-build.properties
 # Local headless test tooling output
 /tools/CoreTests/bin/
 /tools/CoreTests/obj/
-# ...but the hand-written headless test project IS source — keep it.
+# ...but the hand-written headless test project IS source. Keep it.
 !/tools/CoreTests/CoreTests.csproj
 !/tools/CoreTests/Program.cs
 /tools/CoreTests/TestResult.xml

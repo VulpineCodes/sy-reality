@@ -52,14 +52,14 @@ namespace SyReality.Core
         public string Id { get; }
         public string Title { get; }
         public string Artist { get; }
-        /// <summary>Provenance note, e.g. "Traditional — public domain". Required so
+        /// <summary>Provenance note, e.g. "Traditional, public domain". Required so
         /// bundled content always carries its licensing basis.</summary>
         public string RightsNote { get; }
         public double DurationSeconds { get; }
-        /// <summary>1 (easy) – 5 (hard). Informational only.</summary>
+        /// <summary>1 (easy) to 5 (hard). Informational only.</summary>
         public int Difficulty { get; }
         /// <summary>File name of the audio inside StreamingAssets/Audio, or "" for
-        /// the silent / metronome test mode.</summary>
+        /// the silent test mode.</summary>
         public string AudioFileName { get; }
         public IReadOnlyList<LyriRiver> Lines { get; }
 

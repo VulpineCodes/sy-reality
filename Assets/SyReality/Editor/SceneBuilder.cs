@@ -11,13 +11,13 @@ namespace SyReality.Editor
     /// <summary>
     /// Builds Assets/Scenes/MainStage.unity entirely from code (menu:
     /// SyReality → Build MainStage Scene) so the scene is reproducible from the
-    /// repository — no hand-authored binary scene YAML. Also generates the three
+    /// repository. No hand-authored binary scene YAML. Also generates the three
     /// environment profile assets. See Assets/Scenes/README.md for the composition
     /// this produces and the manual wiring checklist.
     ///
     /// The XR rig here is a placeholder (Camera Offset + camera + two controller
     /// cubes). On first real device work, replace "XR Rig (Placeholder)" with the
-    /// XR Interaction Toolkit "XR Origin (XR Rig)" prefab — PerformanceManager and
+    /// XR Interaction Toolkit "XR Origin (XR Rig)" prefab. PerformanceManager and
     /// the UI are rig-agnostic.
     /// </summary>
     public static class SceneBuilder

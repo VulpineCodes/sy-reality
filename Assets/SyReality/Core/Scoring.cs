@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SyReality.Core
 {
-    // OPTIONAL EXTENSION — pitch scoring.
+    // OPTIONAL EXTENSION: pitch scoring.
     //
     // Sy-Reality! does NOT score pitch today. This module defines the seam where a
     // real pitch detector (FFT/autocorrelation over microphone input) would plug
@@ -44,7 +44,7 @@ namespace SyReality.Core
     }
 
     /// <summary>
-    /// Timing-based participation feedback — NOT vocal scoring. Tracks which lines
+    /// Timing-based participation feedback. NOT vocal scoring. Tracks which lines
     /// were actively performed through (the Unity layer marks a line as sung when
     /// the performer stays in the performance until the line completes, and can
     /// later require microphone energy where available). Results are framed as

@@ -9,7 +9,7 @@ namespace SyReality.Unity
     /// Renders the current lyric frame: previous line (dimmed), current line with a
     /// color highlight that advances with the sync engine's character count, next
     /// line (preview), and a progress bar. TextMeshPro rich text does the highlight;
-    /// all timing decisions come from the core engine — this component only draws.
+    /// all timing decisions come from the core engine. This component only draws.
     /// </summary>
     public sealed class LyricDisplay : MonoBehaviour
     {

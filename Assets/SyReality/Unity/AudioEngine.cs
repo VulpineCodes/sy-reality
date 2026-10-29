@@ -18,8 +18,8 @@ namespace SyReality.Unity
     /// frame and feeds it to the PlaybackClock for drift correction.
     ///
     /// Test mode: when a song has no audio file (AudioFileName empty) or the clip
-    /// fails to load, the engine runs silent and the PlaybackClock free-runs —
-    /// lyric sync still works (documented "silent / metronome test mode").
+    /// fails to load, the engine runs silent and the PlaybackClock free-runs,
+    /// lyric sync still works in the silent test mode).
     /// Audio files are never bundled for copyrighted songs; users place their own
     /// licensed files in StreamingAssets/Audio (see that folder's README).
     /// </summary>
@@ -44,7 +44,7 @@ namespace SyReality.Unity
         {
             if (string.IsNullOrEmpty(fileName))
             {
-                Debug.Log("[SyReality] No audio file for this song — silent test mode.");
+                Debug.Log("[SyReality] No audio file for this song. Silent test mode.");
                 yield break;
             }
             string path = Path.Combine(Application.streamingAssetsPath, "Audio", fileName);

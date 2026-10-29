@@ -35,7 +35,7 @@ namespace SyReality.Unity
                 var button = Instantiate(songButtonPrefab, listRoot);
                 var label = button.GetComponentInChildren<TextMeshProUGUI>();
                 if (label != null)
-                    label.text = $"{song.Title} — {song.Artist}  ·  ★{song.Difficulty}";
+                    label.text = $"{song.Title} - {song.Artist}  ·  ★{song.Difficulty}";
                 button.onClick.AddListener(() => performanceManager?.SelectSong(captured));
             }
         }

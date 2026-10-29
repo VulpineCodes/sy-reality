@@ -13,7 +13,7 @@ namespace SyReality.Unity
     ///
     /// XR note: this manager is input-agnostic. XR Interaction Toolkit actions or
     /// controller buttons call the same intent methods as the debug keyboard
-    /// shortcuts in Update() — wire XRI select/activate actions to them in the
+    /// shortcuts in Update(). Wire XRI select/activate actions to them in the
     /// rig prefab.
     /// </summary>
     public sealed class PerformanceManager : MonoBehaviour
@@ -29,7 +29,7 @@ namespace SyReality.Unity
         public ParticipationTracker Participation { get; private set; }
         public SongDefinition CurrentSong { get; private set; }
 
-        /// <summary>Pitch scoring seam — NullScorer until a real detector exists.</summary>
+        /// <summary>Pitch scoring seam: NullScorer until a real detector exists.</summary>
         public IPitchScorer PitchScorer { get; set; } = new NullScorer();
 
         private int _lastCompletedLine = -1;
